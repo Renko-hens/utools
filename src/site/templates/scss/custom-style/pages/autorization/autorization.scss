@@ -1,0 +1,236 @@
+// Растягиваю блок по всей высоте
+.autorization__container {
+  min-height: 100vh;
+}
+// Удаляет все outline везде в форме
+:active,
+:hover,
+:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+@include breakpoint(xs) {
+  .login {
+    width: calc(100% - 2 * var(--component-padding));
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.login-form__block {
+  flex-basis: 100%;
+  align-self: flex-end;
+}
+
+.login-form__wrapper {
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
+}
+
+@include breakpoint(lg) {
+  .login-form__wrapper {
+    margin-left: auto;
+    margin-right: 104px;
+  }
+}
+
+.autorization__picture {
+  max-width: 150px;
+}
+
+.logotype {
+  width: 100%;
+}
+
+// margin-top: 90px - 12px
+.login-form__title {
+  margin-top: calc(var(--space-xl) - var(--space-xs));
+}
+
+.form {
+  margin-top: calc(var(--space-lg) + var(--space-xs));
+}
+
+.form__input {
+  margin-top: var(--space-xs);
+}
+
+.form__input--error {
+  border-color: var(--color-error);
+}
+
+.form__input--error:focus {
+  --color-shadow: hsla(var(--color-error-h), var(--color-error-s), var(--color-error-l), 0.2);
+  box-shadow: 0 0 0 3px var(--color-shadow);
+}
+
+.input-promocode::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 12px;
+  height: 80px;
+
+  background-image: url("/site/templates/img/coupon_border.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transform: rotate(180deg);
+}
+
+.input-promocode::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  display: block;
+  width: 12px;
+  height: 80px;
+
+  background-image: url("/site/templates/img/coupon_border.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.form__input--promocode,
+.form__input--promocode:focus {
+  display: block;
+  width: 94%;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 8px;
+
+  font-family: 'Bitter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: none;
+  border-radius: 0;
+  background-color: white;
+  box-shadow: 0 4px 12px 4px #d9e2f7;
+}
+
+.form__input[readonly] {
+  outline: none;
+  --color-shadow: 1px solid var(--color-contrast-low);
+  border-color: 1px solid var(--color-contrast-low);
+  box-shadow: none;
+}
+
+.form__wrapper-input {
+  position: relative;
+}
+
+.form__wrapper-input:not(:first-child) {
+  margin-top: var(--space-md);
+}
+
+.form__wrapper-label {
+  position: relative;
+}
+
+.form__tooltip {
+  position: relative;
+
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+
+  background-image: url("/site/templates/img/help.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form__link:focus,
+.form__link:active,
+.form__link:hover {
+  color: var(--color-warning);
+}
+
+.form__link--helper {
+  color: var(--color-contrast-high);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.form__link--helper:focus,
+.form__link--helper:active,
+.form__link--helper:hover {
+  color: var(--color-warning);
+}
+
+.form__wrapper-checkbox {
+  margin-top: calc(var(--space-md) - var(--space-xxxs));
+}
+
+.form__block-checkbox {
+  margin-right: var(--space-xxs);
+}
+
+.form__block-checkbox--agree {
+  cursor: pointer;
+}
+
+.form__link--nope-decoration {
+  text-decoration: none;
+}
+
+.form__wrapper-button {
+  margin-top: calc(var(--space-md) + var(--space-xxxs) / 2);
+}
+
+.form__button {
+  font-weight: bold;
+}
+
+.form__button:not(:last-child) {
+  margin-bottom: var(--space-sm);
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+
+  font-size: var(--text-sm);
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 300;
+}
+// Promo
+.promo {
+  background-color: var(--color-primary);
+  padding: var(--space-xl) var(--space-sm);
+}
+
+@include breakpoint(lg) {
+  .promo__wrapper {
+    margin-left: var(--space-xl);
+  }
+}
+
+.promo__text {
+  color: var(--color-white);
+}
+
+.promo__title {
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.promo__description {
+  margin-top: var(--space-md);
+}
+
+.promo__image {
+  margin-top: var(--space-md);
+}

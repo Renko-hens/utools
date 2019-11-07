@@ -1,0 +1,104 @@
+div(
+  class="svg-slideshow js-svg-slideshow" 
+  data-swipe="on"
+)
+  p(
+    class="sr-only"
+  ) Image Slideshow Items
+
+  ul(
+    class="svg-slideshow__content"
+  )
+    li(
+      class="svg-slideshow__item js-svg-slideshow__item"
+    )
+      img(
+        src="https://avatars.mds.yandex.net/get-pdb/1477444/553f1b2e-6ca1-4aff-bdbd-28fecc42a4ff/s1200?webp=false" 
+        alt="Image Description"
+      )
+    li(
+      class="svg-slideshow__item js-svg-slideshow__item"
+    )
+      img(
+        src="https://www.sunhome.ru/i/wallpapers/188/krasivii-plyazh.orig.jpg" 
+        alt="Image Description"
+      )
+    li(
+      class="svg-slideshow__item js-svg-slideshow__item"
+    )
+      img(
+        src="https://wallpaperscave.ru/images/original/18/03-23/earth-ocean-32670.jpg" 
+        alt="Image Description"
+      )
+    li(
+      class="svg-slideshow__item js-svg-slideshow__item"
+    )
+      img(
+        src="https://avatars.mds.yandex.net/get-pdb/1816426/733388e4-2cff-4dd6-8f19-064d4f7af81f/s1200" 
+        alt="Image Description"
+      )
+  
+  ul
+    li(
+      class="svg-slideshow__control js-svg-slideshow__control"
+    )
+      button(
+        class="reset flex flex-center js-tab-focus"
+      )
+        svg(
+          class="icon"
+          viewBox="0 0 32 32"
+        )
+          title Show previous slide
+          path(
+            d="M20.768,31.395L10.186,16.581c-0.248-0.348-0.248-0.814,0-1.162L20.768,0.605l1.627,1.162L12.229,16 l10.166,14.232L20.768,31.395z"
+          )
+
+    li(
+      class="svg-slideshow__control js-svg-slideshow__control"
+    )
+      button(
+        class="reset flex flex-center js-tab-focus"
+      )
+        svg(
+          class="icon"
+          viewBox="0 0 32 32"
+        )
+          title Show next slide
+          path(
+            d="M11.232,31.395l-1.627-1.162L19.771,16L9.605,1.768l1.627-1.162l10.582,14.813 c0.248,0.348,0.248,0.814,0,1.162L11.232,31.395z"
+          )
+    
+    //- <!-- svg masks - skew effect 16:9 -->
+    //- <!-- next slide transition -->
+    svg(
+      class="js-svg-slideshow__mask is-hidden"
+      viewBox="0 0 1280 720" 
+    )
+      g
+        path(
+          d="M1282,720C1282,720,1280,720,1280,720C1280,720,1280,0,1280,0C1280,0,1281,0,1281,0C1281.5,0,1282,0.5,1282,1C1282,1,1282,720,1282,720C1282,720,1282,720,1282,720C1282,720,1282,720,1282,720"
+        )
+        path(
+          d="M1282,720C1282,720,347,720,347,720C347,720,724,0,724,0C724,0,1281,0,1281,0C1281.5,0,1282,0.5,1282,1C1282,1,1282,720,1282,720C1282,720,1282,720,1282,720C1282,720,1282,720,1282,720"
+        )
+        path(
+          d="M1282,720C1282,720,-2,720,-2,720C-2,720,-2,0,-2,0C-2,0,1281,0,1281,0C1281.5,0,1282,0.5,1282,1C1282,1,1282,720,1282,720C1282,720,1282,720,1282,720C1282,720,1282,720,1282,720"
+        )
+    
+    //- <!-- prev slide transition -->
+    svg(
+      class="js-svg-slideshow__mask is-hidden"
+      viewBox="0 0 1280 720" 
+    )
+      g
+        path(
+          d="M-2,1C-2,0.5,-1.5,0,-1,0C-1,0,0,0,0,0C0,0,0,720,0,720C0,720,-2,720,-2,720C-2,720,-2,1,-2,1C-2,1,-2,1,-2,1C-2,1,-2,1,-2,1"
+        )
+        path(
+          d="M-2,1C-2,0.5,-1.5,0,-1,0C-1,0,556,0,556,0C556,0,933,720,933,720C933,720,-2,720,-2,720C-2,720,-2,1,-2,1C-2,1,-2,1,-2,1C-2,1,-2,1,-2,1"
+        )
+        path(
+          d="M-2,1C-2,0.5,-1.5,0,-1,0C-1,0,1282,0,1282,0C1282,0,1282,720,1282,720C1282,720,-2,720,-2,720C-2,720,-2,1,-2,1C-2,1,-2,1,-2,1C-2,1,-2,1,-2,1"
+        )
+

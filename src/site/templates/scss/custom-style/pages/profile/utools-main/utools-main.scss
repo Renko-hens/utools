@@ -1,0 +1,111 @@
+
+.utools-main {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  // min-width: 680px;
+  position: relative;
+}
+
+.utools-main__header {
+  box-shadow: 4px 5px 23px var(--color-shadow);
+}
+
+.utools-main__search {
+    // забирает 70% свободного места
+    flex-grow: 1;
+}
+
+.utools-main__profile-block {
+  display: flex;
+  align-items: center;
+}
+
+@include breakpoint (sm) {
+  .utools-main__profile-block {
+    justify-content: flex-end;
+  }
+}
+
+.utools-main__navigation-block + .utools-main__navigation-block {
+  margin-left: 24px;
+}
+
+.utools-main__notification {
+  position: relative;
+}
+
+.utools-main__notification:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 36px;
+  top: -24%;
+  opacity: 0.23;
+  background-color: #AFAFAF;
+  width: 1px;
+  height: 40px;
+}
+
+.utools-main__notification-button {
+  cursor: pointer;
+}
+
+// .utools-main__balance {
+// }
+
+// .utools-main__profile {
+//   margin-left: 24px;
+// }
+
+@include breakpoint (xs) {
+  .utools-main__notification {
+    display: none;
+  }
+}
+
+@include breakpoint (sm) {
+  .utools-main__notification {
+    display: block;
+  }
+}
+
+@include breakpoint (xs) {
+  .utools-main__balance {
+    padding-left: var(--space-md);
+  }
+}
+
+@include breakpoint (sm) {
+  .utools-main__balance {
+    padding-left: 0;
+  }
+}
+
+.utools-main__logo-wrapper {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.utools-main__content-block {
+  max-height: calc(100vh - 50px);
+  overflow-y: scroll;
+
+  flex-grow: 1;
+}
+
+@include breakpoint (xs) {
+  .utools-main__content-block {
+    padding: 40px 0;
+    background-color: var(--color-bg-content);
+  }
+}
+
+@include breakpoint (sm) {
+  .utools-main__content-block {
+    padding: 40px 8px;
+  }
+}

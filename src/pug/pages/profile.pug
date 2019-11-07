@@ -1,0 +1,205 @@
+extends ../layout/index
+block variables
+  - var title = "Мой профиль";
+  - var description = "";
+  - var pageCLass = "utools";
+  - var selected = "profile";
+
+block content
+  section(
+    class = "referral"
+  )
+    div(
+      class = "referral__wrapper"
+    )
+      h2(
+        class = "referral__title"
+      ) Ваша реферальная <br> ссылка
+
+      form(
+        class = "referral__form"
+      )
+        div(
+          class = "referral__block"
+        )
+          input(
+            type = "text"
+            class = "referral__input form-control to-copy"
+            value = "https://ucoins.ru/?refid=33868"
+          )
+
+          button(
+            class = "referral__button btn btn--lighter write-btn"
+          ) Копировать
+  
+  section(
+    class = "personal-form"
+  )
+    form(
+      class = "personal-form__block max-width-xxxs"
+    )
+      div(
+        class = "data-wrapper"
+      )
+        h2(
+          class = "data-wrapper__title title text-center@xs text-left@sm text-bold"
+        ) Личные данные
+
+        div(
+          class = "form__wrapper-input"
+        )
+          label(
+            class = "form__label form-label"
+            for = "inputEmail"
+          ) Почта
+
+          input(
+            class = "form__input form-control width-100%"
+            id = "inputEmail"
+            name="inputEmail"
+            type = "text"
+            value = "renko.hens@yandex.ru"
+            disabled
+          )
+
+        div(
+          class = "form__wrapper-input"
+        )
+          label(
+            class = "form__label form-label"
+            for = "inputFName"
+          ) Имя
+
+          input(
+            class = "form__input form-control width-100%"
+            id = "inputFName"
+            name="inputFName"
+            type = "text"
+            value = "Denis"
+          )
+
+        div(
+          class = "form__wrapper-input"
+        )
+          label(
+            class = "form__label form-label"
+            for = "inputLName"
+          ) Фамилия
+
+          input(
+            class = "form__input form-control width-100%"
+            id = "inputLName"
+            name="inputLName"
+            type = "text"
+            value = "Shibidzhiev"
+          )
+        
+        div(
+          class = "form__wrapper-input"
+        )
+          label(
+            class = "form__label form-label"
+            for = "inputMName"
+          ) Отчество
+
+          input(
+            class = "form__input form-control width-100%"
+            id = "inputMName"
+            name="inputMName"
+            type = "text"
+            value = "Shibidzhiev"
+          )
+
+        div(
+          class = "form__wrapper-input"
+        )
+          label(
+            class = "form__label form-label"
+            for = "inputPhone"
+          ) Телефон
+
+          input(
+            class = "form__input form-control width-100%"
+            id = "inputPhone"
+            name="inputPhone"
+            type = "text"
+            value = "89111234567"
+          )
+        
+        div(
+          class = "form__wrapper-button"
+        )
+          button(
+            class = "form__button btn btn--primary"
+            id = "buttonCompleteProfile"
+            name = "buttonCompleteProfile"
+            type = "button"
+          ) Сохранить
+    
+    form(
+      class = "personal-form__block max-width-xxxs"
+    )
+      div(
+        class = "data-wrapper"
+      )
+        h2(
+          class = "data-wrapper__title title text-center@xs text-left@sm text-bold"
+        ) Пароль
+
+        div(
+          class = "form__wrapper-input"
+        )
+          label(
+            class = "form__label form-label"
+            for = "currentPassword"
+          ) Текущий пароль
+
+          input(
+            class = "form__input form-control width-100%"
+            id = "currentPassword"
+            name = "currentPassword"
+            type = "password"
+            autocomplete = "currentPassword"
+          )
+
+        div(
+          class = "form__wrapper-input"
+        )
+          label(
+            class = "form__label form-label"
+            for = "newPassword"
+          ) Новый пароль
+
+          input(
+            class = "form__input form-control width-100%"
+            id = "newPassword"
+            name = "newPassword"
+            type = "password"
+            autocomplete = "newPassword"
+          )
+
+        div(
+          class = "form__wrapper-input"
+        )
+          label(
+            class = "form__label form-label"
+            for = "confirmedPassword"
+          ) Подтвердите пароль
+
+          input(
+            class = "form__input form-control width-100%"
+            id = "confirmedPassword"
+            name = "confirmedPassword"
+            type = "password"
+            autocomplete = "confirmedPassword"
+          )
+
+        div(
+          class = "form__wrapper-button"
+        )
+          button(
+            class = "form__button btn btn--primary"
+            id = "buttonCompletePassword"
+            name = "buttonCompletePassword"
+            type = "button"
+          ) Сохранить

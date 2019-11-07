@@ -1,0 +1,22 @@
+.personal-form {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+@media(max-width: 768px) {
+  .personal-form {
+    flex-wrap: wrap;
+  }
+}
+
+.personal-form__block {
+  flex-grow: 1;
+  border-radius: 4px;
+  padding: 24px 32px 50px 32px;
+  background-color: var(--color-white)
+}
+
+.personal-form__block + .personal-form__block {
+  margin-left: 40px;
+}

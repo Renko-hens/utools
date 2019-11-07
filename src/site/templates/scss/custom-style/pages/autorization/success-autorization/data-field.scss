@@ -1,0 +1,27 @@
+.data-field {
+  padding: 32px 0;
+  min-height: 100vh;
+  background: var(--color-primary);
+  background: linear-gradient(180deg, rgba(1,43,140,1) 0%, rgba(2,78,253,1) 60%);
+}
+
+.data-field__block {
+  border-radius: 4px;
+  padding: 24px 32px 50px 32px;
+  background-color:  var(--color-white);
+}
+
+.data-wrapper__title {
+  font-size: 24px;
+  margin: 0;
+  color: var(--color-contrast-high);
+}
+
+.data-wrapper__sub-title {
+  margin-top: 16px;
+  color: var(--color-contrast-high);
+}
+
+.data-form {
+  margin-top: 32px;
+}

@@ -1,0 +1,60 @@
+include ../utils/mixins
+block variables
+
+block link
+  -var selected = 'home'; //default
+  -var menu = { 'home': '/home', 'blog': '/blog', 'referal': '/referal' };
+
+doctype html
+html(
+  lang="ru"
+)
+  head
+    meta(
+      charset = "UTF-8"
+    )
+    meta(
+      name = "viewport", content = "width=device-width, initial-scale=1"
+    )
+    meta(
+      http-equiv = "X-UA-Compatible", content = "ie=edge"
+    )
+    link(
+      rel = "stylesheet", href = "https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&display=swap"
+    )
+    meta(
+      name = "description", content = description
+    )
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+    title #{title}
+    block head
+
+  body(
+    class = pageClass
+  )
+    main(
+      class = "main"
+    )
+      div(
+        class = "utools-ui flex"
+      )
+
+        include ../inc/modules/aside
+
+        div(
+          class = "utools-main"
+        )
+
+          include ../inc/modules/header
+
+          div(
+            class = "utools-main__content-block"
+          )
+            section(
+              class = "utools-main__content-wrapper container max-width-md"
+            ) 
+              block content  
+    script(
+      src="site/templates/js/util.js"
+    )

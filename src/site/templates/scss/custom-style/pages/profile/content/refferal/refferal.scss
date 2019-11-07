@@ -1,0 +1,103 @@
+.referral {
+  padding: 32px;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  box-shadow: 10px 11px 11px var(--color-shadow);
+}
+
+@include breakpoint (sm) {
+  .referral {
+    padding: 16px 32px;
+  }
+}
+
+@include breakpoint (md) {
+  .referral {
+    padding: 32px 24px 32px 32px;
+  }
+}
+
+@include breakpoint (xs) {
+  .referral__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@include breakpoint (sm) {
+  .referral__wrapper {
+    flex-wrap: nowrap;
+  }
+}
+
+.referral__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+@include breakpoint (xs) {
+  .referral__title {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@include breakpoint (sm) {
+  .referral__title {
+    flex-basis: auto;
+    text-align: left;
+  }
+}
+
+.referral__title {
+  font-size: 20px;
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+@include breakpoint (xs) {
+  .referral__form {
+    margin-top: 24px;
+    margin-left: 0;
+  }
+}
+
+@include breakpoint (sm) {
+  .referral__form {
+    margin-top: 0;
+    margin-left: 16px;
+  }
+}
+
+@include breakpoint (md) {
+  .referral__form {
+    margin-left: 40px;
+  }
+}
+
+.referral__form {
+  flex-grow: 1;
+}
+
+.referral__block {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.referral__input {
+  border: 0;
+  flex-basis: 70%
+}
+
+.referral__button {
+  flex-basis: 30%;
+  margin-left: -8px;
+
+  padding-top: var(--btn-padding-y, 0.5em);
+  padding-bottom: var(--btn-padding-y, 0.5em);
+  padding-left: var(--btn-padding-x, 0.75em);
+  padding-right: var(--btn-padding-x, 0.75em);
+
+  font-weight: 700;
+  box-shadow: none;
+}

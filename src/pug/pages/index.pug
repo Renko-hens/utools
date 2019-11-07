@@ -1,0 +1,75 @@
+extends ../layout/index
+block variables
+  - var title = "Сводные данные";
+  - var description = "";
+  - var pageCLass = "utools";
+  - var selected = "index";
+
+block content
+  section(
+    class = "profile-block"
+  )
+    div(
+      class = "profile-block__container"
+    )
+      div(
+        class = "profile-block__wrapper"
+      )
+        h2(
+          class = "profile-block__title"
+        ) Мой профиль
+
+        a(
+          href="#"
+        ) Подробнее
+      
+      div(
+        class = "profile-block__wrapper"
+      )
+        div(
+          class = "profile-block__picture"
+        )
+          img(
+            class = "profile-block__image"
+            src = "site/templates/img/smile.svg"
+            alt = "profile"
+          )
+
+        div(
+          class = "profile-block__data-text"
+        )
+          p(
+            class = "profile-block__nickname"
+          ) unileadstudio
+          
+          p(
+            class = "profile-block__nickname"
+          ) web@unilead.studio
+          
+          p(
+            class = "profile-block__nickname"
+          ) id33868
+        
+      div(
+        class = "profile-block__wrapper referral"
+      )
+        h2(
+          class = "referral__title"
+        ) Реферальная <br> ссылка:
+
+        form(
+          class = "referral__form"
+        )
+          div(
+            class = "referral__block"
+          )
+            input(
+              class = "referral__input form-control"
+              type = "text"
+            )
+            
+            button(
+              class = "referral__button btn btn--lighter"
+              type = "button"
+            ) %
+            

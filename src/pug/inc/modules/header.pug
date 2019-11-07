@@ -1,0 +1,135 @@
+header(
+  class = "utools-main__header f-header js-f-header"
+)
+  //- Кнопка с меню
+  div(
+    class = "utools-main__mobile-menu f-header__mobile-content container max-width-lg"
+  )
+    a(
+      class = "utools-main__logo-wrapper f-header__logo"
+      href = "#0"
+    )
+      img(
+        src="site/templates/img/smile.svg"
+        alt = "profile"
+      )
+    
+    button(
+      class = "reset anim-menu-btn js-anim-menu-btn f-header__nav-control js-tab-focus"
+      aria-label = "Toggle menu"
+    )
+      i(
+        class="anim-menu-btn__icon anim-menu-btn__icon--close"
+        aria-hidden="true"
+      )
+
+  //- Блок с поиском
+  nav(
+    class="utools-main__navigation f-header__nav"
+    role="navigation"
+  )
+    div(
+      class="utools-main__navigation-container f-header__nav-grid justify-between@md container"
+    )
+      div(
+        class="utools-main__search search-input search-input--icon-left"
+      )
+        button(
+          class="search-input__btn"
+          type="button"
+        )
+          svg(
+            class="icon"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          )
+            title Поиск
+
+            path(
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.0515 11.3208H12.8645L18 16.4666L16.4666 18L11.3208 12.8645V12.0515L11.0429 11.7633C9.86964 12.7719 8.34648 13.3791 6.68954 13.3791C2.99485 13.3791 0 10.3842 0 6.68954C0 2.99485 2.99485 0 6.68954 0C10.3842 0 13.3791 2.99485 13.3791 6.68954C13.3791 8.34648 12.7719 9.86964 11.7633 11.0429L12.0515 11.3208ZM2 6.5C2 8.99 4.01 11 6.5 11C8.99 11 11 8.99 11 6.5C11 4.01 8.99 2 6.5 2C4.01 2 2 4.01 2 6.5Z"
+              fill="#CACEDB"
+            )
+        
+        input(
+          class="form-control form-control--none f-header__form-control"
+          type="search"
+          name="searchInputX"
+          id="searchInputX"
+          placeholder="Поиск..."
+        )
+    
+      div(
+        class="utools-main__profile-block"
+      )
+        div(
+          class="utools-main__navigation-block utools-main__notification"
+        )
+          button(
+            class="utools-main__notification-button counter-container"
+            type="button"
+          )
+            img(
+              src="site/templates/img/notification__jingle.svg"
+              alt="#"
+            )
+
+            span(
+              class="counter counter--critical counter__notification"
+              ) 3
+
+              i(
+                class="sr-only"
+              ) Уведомлений
+        
+        //- Блок с балансом
+        //- div(
+        //-   class="utools-main__navigation-block utools-main__balance"
+        //- )
+        //-   p(
+        //-     class="balance__title"
+        //-   ) Баланс
+          
+        //-   p(
+        //-     class="balance__title"
+        //-   ) 9999 Р
+        
+        //- <!-- Блок меню с профайлом -->
+        div(
+          class="utools-main__navigation-block utools-main__profile"
+        )
+          ul(
+            class="f-header__list"
+          )
+            li(
+              class="f-header__item"
+            )
+              div(
+                class="f-header__nav-logo-wrapper"
+              )
+                a(
+                  href="#"
+                  class="utools-main__logo-wrapper f-header__logo"
+                )
+                  img(
+                    src="site/templates/img/smile.svg"
+                    alt="profile"
+                  )
+
+                  img(
+                    class="margin-left-sm"
+                    src="site/templates/img/drop-down(arrow--down).svg"
+                    alt="profile"
+                  )
+              //- <!-- Выпадашка меню -->
+              ul(
+                class="f-header__dropdown"
+              )
+                li  
+                  a(
+                    class="f-header__dropdown-link"
+                  ) Выход

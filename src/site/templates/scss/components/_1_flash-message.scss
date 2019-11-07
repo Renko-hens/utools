@@ -1,0 +1,52 @@
+/* -------------------------------- 
+
+File#: _1_flash-message
+Title: Flash message
+Descr: Modeless, non-interactive message to alert the user of a status change
+
+-------------------------------- */
+
+.flash-message {
+  position: fixed;
+  top: var(--space-md);
+  left: var(--space-md);
+  right: var(--space-md);
+  z-index: var(--zindex-fixed-element);
+  text-align: center;
+
+  background-color: var(--color-contrast-higher);
+  padding: var(--space-md) var(--space-sm);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  font-size: calc(var(--text-sm) - 2);
+
+  transition: .2s;
+  transform: translateY(-16px);
+  transform-origin: top right;
+  // hide element
+  opacity: 0;
+  visibility: hidden;
+}
+
+@include breakpoint(xs) {
+  .flash-message {
+    left: var(--space-md);
+    text-align: center;
+    width: auto;
+  }
+}
+
+@include breakpoint(sm) {
+  .flash-message {  
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.flash-message--is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

@@ -1,0 +1,23 @@
+@import 'custom-style/colors';
+@import 'custom-style/spacing';
+@import 'custom-style/shared-styles';
+@import 'custom-style/typography';
+@import 'custom-style/icons';
+@import 'custom-style/buttons';
+@import 'custom-style/forms';
+
+// scrol-bar
+@import 'custom-style/pages/parts/scroll-bar.scss';
+
+// blocks autorization
+@import 'custom-style/pages/autorization/autorization.scss';
+@import 'custom-style/pages/autorization/success-autorization/data-field.scss';
+
+
+// blocks profile
+@import 'custom-style/pages/profile/utools-sidebar/utools-sidebar.scss';
+@import 'custom-style/pages/profile/utools-main/utools-main.scss';
+
+// parts
+@import 'custom-style/pages/profile/content/refferal/refferal.scss';
+@import 'custom-style/pages/profile/content/personal-form/personal-form.scss';

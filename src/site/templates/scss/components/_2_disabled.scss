@@ -1,0 +1,12 @@
+.disabled {
+  background-color: var(--color-primary-lighter);
+  pointer-events: none;
+  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+  user-select: none;
+}
+
+.disabled:focus,
+.disabled:active {
+  background-color: var(--color-primary-lighter);
+  outline: 0;
+}
