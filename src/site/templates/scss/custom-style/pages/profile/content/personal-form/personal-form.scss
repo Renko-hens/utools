@@ -1,12 +1,14 @@
 .personal-form {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
   margin-top: 40px;
 }
 
-@media(max-width: 768px) {
+@include breakpoint (md) {
   .personal-form {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
 
@@ -18,5 +20,13 @@
 }
 
 .personal-form__block + .personal-form__block {
-  margin-left: 40px;
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+@include breakpoint (md) {
+  .personal-form__block + .personal-form__block {
+    margin-left: 40px;
+    margin-top: 0;
+  }
 }

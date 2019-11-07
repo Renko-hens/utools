@@ -17,5 +17,38 @@
 		for( var i = 0; i < sideNavs.length; i++) {
       (function(i){initSideNav(sideNavs[i]);})(i);
 		}
-	}
+  }
 }());
+
+
+// sidebar hide/show
+
+const sidebar = document.querySelector(".utools-sidebar");
+const mainMenuBtn = document.querySelector(".utools-main__button-menu");
+const sidebarMenuBtn = document.querySelector(".utools-sidebar__button-menu");
+
+if (window.innerWidth < 768) {
+  sidebar.classList.add("utools-sidebar--hide");
+} else {
+  mainMenuBtn.classList.add("utools-main__button-menu--hide");
+}
+
+sidebarMenuBtn.addEventListener("click", ()=>{
+  toggleSidebar();
+});
+
+mainMenuBtn.addEventListener("click", ()=>{
+    toggleSidebar();
+});
+
+function toggleSidebar() {
+  const isSidebarHide = sidebar.classList.contains("utools-sidebar--hide");
+
+  if( isSidebarHide ){
+    sidebar.classList.toggle("utools-sidebar--hide");  
+    mainMenuBtn.classList.toggle("utools-main__button-menu--hide");
+  } else {
+    sidebar.classList.toggle("utools-sidebar--hide");  
+    mainMenuBtn.classList.toggle("utools-main__button-menu--hide");
+  }
+};

@@ -1,4 +1,3 @@
-
 .utools-main {
   position: relative;
   z-index: 0;
@@ -11,6 +10,14 @@
 
 .utools-main__header {
   box-shadow: 4px 5px 23px var(--color-shadow);
+}
+
+.utools-main__button-menu--hide {
+  display: none;
+}
+
+.utools-main__navigation-menu-button {
+
 }
 
 .utools-main__search {

@@ -5,6 +5,12 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #012b8c 0%, #024efd 60%);
+  transition: 0.2s margin-left;
+}
+
+.utools-sidebar--hide {
+  margin-left: -250px;
+  transition: 0.2s margin-left;
 }
 
 .utools-sidebar__header {
@@ -19,12 +25,6 @@
 
 .utools-sidebar__picture{}
 .utools-sidebar__link{}
-
-.utools-sidebar__button-menu {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
 
 .utools-sidebar__navigation-header {}
 
