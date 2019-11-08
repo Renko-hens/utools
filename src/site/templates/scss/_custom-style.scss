@@ -6,7 +6,10 @@
 @import 'custom-style/buttons';
 @import 'custom-style/forms';
 
-// scrol-bar
+// general
+@import 'custom-style/pages/general/main.scss';
+
+// scroll-bar
 @import 'custom-style/pages/parts/scroll-bar.scss';
 
 // blocks autorization
