@@ -6,7 +6,7 @@
   margin-top: 40px;
 }
 
-@include breakpoint (md) {
+@media (min-width: 800px) {
   .personal-form {
     flex-wrap: nowrap;
   }
@@ -16,17 +16,18 @@
   flex-grow: 1;
   border-radius: 4px;
   padding: 24px 32px 50px 32px;
-  background-color: var(--color-white)
+  background-color: var(--color-white);
 }
 
-.personal-form__block + .personal-form__block {
-  margin-left: 0;
-  margin-top: 40px;
-}
-
-@include breakpoint (md) {
+@include breakpoint (xs) {
   .personal-form__block + .personal-form__block {
-    margin-left: 40px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 800px)  {
+  .personal-form__block + .personal-form__block {
     margin-top: 0;
+    margin-left: 40px;
   }
 }

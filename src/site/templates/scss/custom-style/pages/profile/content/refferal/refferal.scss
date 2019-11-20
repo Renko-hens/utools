@@ -5,15 +5,21 @@
   box-shadow: 10px 11px 11px var(--color-shadow);
 }
 
-@include breakpoint (sm) {
+@include breakpoint (xs) {
   .referral {
-    padding: 16px 32px;
+    padding: 32px 24px 32px 32px;
   }
 }
 
-@include breakpoint (md) {
+@media (max-width: 425px) {
   .referral {
-    padding: 32px 24px 32px 32px;
+    padding: 24px 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 840px) {
+  .referral {
+    padding: 16px 24px;
   }
 }
 
@@ -55,10 +61,22 @@
   font-weight: 600;
 }
 
+@media (min-width: 768px) and (max-width: 840px) {
+  .referral__title {
+    font-size: 16px;
+  }
+}
+
 @include breakpoint (xs) {
   .referral__form {
     margin-top: 24px;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .referral__form {
+    margin-top: 16px;
   }
 }
 
@@ -84,9 +102,21 @@
   flex-basis: 100%;
 }
 
+@media (max-width: 425px) {
+  .referral__block {
+    flex-wrap: wrap;
+  }
+}
+
 .referral__input {
   border: 0;
   flex-basis: 70%
+}
+
+@media (max-width: 425px) {
+  .referral__input {
+    flex-basis: 100%
+  }
 }
 
 .referral__button {
@@ -100,4 +130,12 @@
 
   font-weight: 700;
   box-shadow: none;
+}
+
+@media (max-width: 425px) {
+  .referral__button {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-top: 16px;
+  }
 }

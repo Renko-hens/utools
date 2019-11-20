@@ -1,7 +1,6 @@
 const writeBtn = document.querySelector('.write-btn');
 const inputEl = document.querySelector('.to-copy');
 
-
 if(writeBtn || inputEl) {
   writeBtn.addEventListener('click', () => {
     const inputValue = inputEl.value.trim();

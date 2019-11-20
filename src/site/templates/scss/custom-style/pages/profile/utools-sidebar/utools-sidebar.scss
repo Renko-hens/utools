@@ -4,6 +4,9 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
+  max-width: 250px;
+  min-width: 250px;
+  height: 100vh;
   background: linear-gradient(180deg, #012b8c 0%, #024efd 60%);
   transition: 0.2s margin-left;
 }
@@ -54,6 +57,11 @@
   font-weight: 100;
   color: var(--color-white);
   text-decoration: none;
+}
+
+.utools-sidebar__footer-link:hover,
+.utools-sidebar__footer-link:focus {
+  color: var(--color-warning);
 }
 
 .utools-sidebar__header-container {

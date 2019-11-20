@@ -190,6 +190,12 @@
   font-weight: bold;
 }
 
+@media (max-width: 425px) {
+  .form__button {
+    width: 100%;
+  }
+}
+
 .form__button:not(:last-child) {
   margin-bottom: var(--space-sm);
 }

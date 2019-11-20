@@ -23,7 +23,7 @@ module.exports = {
   },
   entry : {
     // раньше путь был ./src/index.js (специально поменяли) для входа
-    app : PATHS.src
+    app : PATHS.src,
   },
   output : {
     // прописали путь для dist и добавили к концу hash
